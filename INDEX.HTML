@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoothie Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="smoothie-container">
+    <h1>Customize Your Smoothie</h1>
+    <form id="smoothieForm">
+      <label for="flavor">Flavor:</label>
+      <select id="flavor" name="flavor">
+        <option value="strawberry">Strawberry</option>
+        <option value="banana">Banana</option>
+        <option value="mango">Mango</option>
+        <option value="blueberry">Blueberry</option>
+      </select>
+
+      <label for="milk">Milk:</label>
+      <input type="radio" id="milkRegular" name="milk" value="regular">
+      <label for="milkRegular">Regular</label>
+      <input type="radio" id="milkAlmond" name="milk" value="almond">
+      <label for="milkAlmond">Almond</label>
+      <input type="radio" id="milkOat" name="milk" value="oat">
+      <label for="milkOat">Oat</label>
+
+      <label for="sweetener">Sweetener:</label>
+      <input type="checkbox" id="sweetenerHoney" name="sweetener" value="honey">
+      <label for="sweetenerHoney">Honey</label>
+      <input type="checkbox" id="sweetenerSugar" name="sweetener" value="sugar">
+      <label for="sweetenerSugar">Sugar</label>
+      <input type="checkbox" id="sweetenerStevia" name="sweetener" value="stevia">
+      <label for="sweetenerStevia">Stevia</label>
+
+      <button type="button" id="orderBtn">Order</button>
+    </form>
+    <div id="smoothieDescription" class="hidden">
+      <h2>Your Smoothie:</h2>
+      <p id="descriptionText"></p>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
